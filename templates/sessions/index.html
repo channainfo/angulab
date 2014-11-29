@@ -1,1 +1,18 @@
-sessions
+<div class="row" ng-controller='RegistrationsController'>
+    <div class="col-sm-6 col-md-4" ng-repeat="session in sessions">
+      
+    <div class="thumbnail" style='text-align: center;'>
+        <img alt='angularjs' src="assets/images/{{session.image}}" >
+      <div class="caption">
+        <h3 class='titile'>{{session.title}}</h3>
+        <p class='description'>
+           {{session.description}}
+        </p>
+        <p>
+           <a href="#" class="btn btn-primary" role="button"> Go to detail </a> 
+        </p>
+      </div>
+    </div>
+      
+  </div>
+</div>
